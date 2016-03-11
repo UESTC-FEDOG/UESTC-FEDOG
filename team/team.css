@@ -1,0 +1,121 @@
+body{
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+.contanier{
+	width: 80%;
+	overflow: auto;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+#head{
+	height: 30px;
+	width: 100%;
+	background-color: #38A3CB;
+	position: relative;
+}
+#head a{
+	color: white;
+	font-weight: bold;
+}
+#content{
+	height: 550px;
+	width: 100%;
+	background-color: #DBF4FD;
+}
+#content .con{
+	position: relative;
+	margin-top: 100px;
+	height: 550px;
+}
+#content .name{
+	width: 40%;
+	overflow: auto;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.name a{
+	font-size: 64px;
+	font-size: 4rem;
+	color: #53CDFB;
+	font-weight: bold;
+}
+#content .face{
+	width: 50%;
+	overflow: auto;
+	margin: auto;
+	position: absolute;
+	top: 25%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.face img{
+	height: 30%;
+	width: 25%;
+	border: 5px solid white;
+	border-bottom-width: 30px;
+}
+#footer{
+	background-color: #38A3CB;
+	height: 50px;
+	width: 100%;
+	position: relative;
+}
+#footer img{
+	overflow: auto;
+	margin: auto;
+	position: absolute;
+	top: -100%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+#resume{
+	overflow: auto;
+	margin: auto;
+	position: absolute;
+	top: 10%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: white;
+	width: 35%;
+	height: 60%;
+	display: none;
+}
+#resume input{
+	background: #95CFFD;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.op{
+	
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+	-khtml-opcity: 0.3;
+	opacity: 0.8;
+}
+ul{
+	list-style :none;
+}
+li{
+	float: left;
+	width: 50%;
+	margin-top: 10%;
+}
+a.clear{
+	margin: 10%;
+}
