@@ -1,0 +1,136 @@
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  box-sizing: border-box;
+  font-family: Roboto,Helvetica,Tahoma,Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+
+
+
+a {
+  background-color: transparent;
+}
+
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+
+
+img {
+  border: 0;
+}
+
+/*normalize结束*/
+
+
+@keyframes popup {
+    from {top: 0;}
+    to {top: -100px;}
+}
+
+.clear-fix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.team-name {
+    width: 11em;
+    margin: 50px auto;
+    text-align: center;
+    
+}
+
+.team-description {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.team-description p {
+    margin: 0;
+    padding: 2em 2em;
+}
+
+.members-list {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.members-list li {
+    display: inline-block;
+    width: 33%;
+    margin-bottom: 50px;
+    vertical-align: top;
+}
+
+@media (max-width: 920px) {
+    .members-list li {
+        width: auto;
+    }
+}
+
+.members-list li:hover .member-description{
+    visibility: visible;
+    animation: popup 1s forwards;
+}
+
+.members-list img {
+    border-radius: 50%;
+}
+
+.member-description {
+    visibility: hidden;
+    position: relative;
+}
+
+
+
+footer {
+    text-align: center;
+}
+
