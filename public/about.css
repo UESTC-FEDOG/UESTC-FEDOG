@@ -37,6 +37,8 @@ summary {
 
 a {
   background-color: transparent;
+  text-decoration: none;
+  color: inherit;
 }
 
 
@@ -63,18 +65,29 @@ img {
   border: 0;
 }
 
-/*normalize结束*/
+
+/* normalize/rest 结束*/
 
 
 @keyframes popup {
-    from {top: 0;}
-    to {top: -100px;}
+    from {top: -20px;}
+    to {top: -50px;}
 }
 
 .clear-fix::after {
     display: table;
     content: '';
     clear: both;
+}
+
+/*工具类、动画结束*/
+
+.main {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    border: 5px solid green;
+    border-radius: 20px;
 }
 
 .team-name {
@@ -86,24 +99,25 @@ img {
 
 .team-description {
     width: 80%;
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
     text-align: center;
     background-color: #f8f8f8;
+    border-radius: 10px;
 }
 
-.team-description p {
+.team-description div {
     margin: 0;
     padding: 2em 2em;
 }
 
 .members-list {
     text-align: center;
-    padding: 0 20px;
+    margin: 100px auto 0 auto;
 }
 
 .members-list li {
     display: inline-block;
-    width: 33%;
+    width: 30%;
     margin-bottom: 50px;
     vertical-align: top;
 }
@@ -112,20 +126,32 @@ img {
     .members-list li {
         width: auto;
     }
+    
+    .team-description {
+        width: 90%;
+    }
 }
 
 .members-list li:hover .member-description{
     visibility: visible;
-    animation: popup 1s forwards;
+    animation: popup 1s both;
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
 .members-list img {
     border-radius: 50%;
 }
 
+.members-list li:hover img {
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
 .member-description {
     visibility: hidden;
     position: relative;
+    padding: 1em 1em;
+    border-radius: 10px;
 }
 
 
