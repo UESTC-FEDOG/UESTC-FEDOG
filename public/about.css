@@ -57,6 +57,7 @@ abbr[title] {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  color: #FC9000;
 }
 
 
@@ -86,7 +87,7 @@ img {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
-    border: 5px solid green;
+    border: 5px solid #003478;;
     border-radius: 20px;
 }
 
@@ -94,7 +95,7 @@ img {
     width: 11em;
     margin: 50px auto;
     text-align: center;
-    
+
 }
 
 .team-description {
@@ -126,7 +127,7 @@ img {
     .members-list li {
         width: auto;
     }
-    
+
     .team-description {
         width: 90%;
     }
@@ -135,7 +136,7 @@ img {
 .members-list li:hover .member-description{
     visibility: visible;
     animation: popup 1s both;
-    background-color: rgba(0, 0, 0, 0.5)
+    background-color: rgba(0, 0, 0, 0.2)
 }
 
 .members-list img {
