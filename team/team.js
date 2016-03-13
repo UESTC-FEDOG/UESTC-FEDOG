@@ -28,7 +28,8 @@
 			this.pic.addEventListener('click', function(event) {
 				if(self.listener) {
 					self.show();
-					self.listener = false
+					self.listener = false;
+					console.log(event);
 					event.stopPropagation();
 				}
 			});

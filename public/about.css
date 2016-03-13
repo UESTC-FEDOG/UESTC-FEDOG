@@ -93,7 +93,8 @@ body {
     margin: 0 auto;
     border: 20px solid #38a3cb;
     border-radius: 20px;
-    background-color: #dbf4fd;
+    background-color: rgba(83,205,251,0.47);
+
 }
 
 .team-name {
@@ -109,6 +110,7 @@ body {
     text-align: center;
     background-color: #f8f8f8;
     border-radius: 10px;
+    background-color: #DBF4FD;
 }
 
 
