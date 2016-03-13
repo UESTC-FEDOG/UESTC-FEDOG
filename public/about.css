@@ -83,12 +83,17 @@ img {
 
 /*工具类、动画结束*/
 
+
+body {
+    background-color: #FFFFCC;
+}
 .main {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
-    border: 5px solid #003478;;
+    border: 20px solid #38a3cb;
     border-radius: 20px;
+    background-color: #dbf4fd;
 }
 
 .team-name {
@@ -105,6 +110,7 @@ img {
     background-color: #f8f8f8;
     border-radius: 10px;
 }
+
 
 .team-description div {
     margin: 0;
@@ -153,11 +159,15 @@ img {
     position: relative;
     padding: 1em 1em;
     border-radius: 10px;
+    text-align: left;
 }
 
-
+.member-description a {
+    text-decoration: underline;
+}
 
 footer {
+    padding-bottom: 30px;
     text-align: center;
 }
 
