@@ -1,1 +1,1 @@
-运行`npm install`后，运行`gulp watch`可以开始实时刷新，更方便一些；
+进入<http://uestc-fedog.github.io/>就可以看了吧，大概
