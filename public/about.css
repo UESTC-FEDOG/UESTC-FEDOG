@@ -1,0 +1,175 @@
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  box-sizing: border-box;
+  font-family: Roboto,Helvetica,Tahoma,Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+
+
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  color: #FC9000;
+}
+
+
+
+img {
+  border: 0;
+}
+
+
+/* normalize/rest 结束*/
+
+
+@keyframes popup {
+    from {top: -20px;}
+    to {top: -50px;}
+}
+
+.clear-fix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+/*工具类、动画结束*/
+
+
+body {
+    background-color: #FFFFCC;
+}
+.main {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    border: 20px solid #38a3cb;
+    border-radius: 20px;
+    background-color: rgba(83,205,251,0.47);
+
+}
+
+.team-name {
+    width: 11em;
+    margin: 50px auto;
+    text-align: center;
+
+}
+
+.team-description {
+    width: 80%;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    background-color: #DBF4FD;
+}
+
+
+.team-description div {
+    margin: 0;
+    padding: 2em 2em;
+}
+
+.members-list {
+    text-align: center;
+    margin: 100px auto 0 auto;
+}
+
+.members-list li {
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 50px;
+    vertical-align: top;
+}
+
+@media (max-width: 920px) {
+    .members-list li {
+        width: auto;
+    }
+
+    .team-description {
+        width: 90%;
+    }
+}
+
+.members-list li:hover .member-description{
+    visibility: visible;
+    animation: popup 1s both;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+.members-list img {
+    border-radius: 50%;
+}
+
+.members-list li:hover img {
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.member-description {
+    visibility: hidden;
+    position: relative;
+    padding: 1em 1em;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.member-description a {
+    text-decoration: underline;
+}
+
+footer {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
